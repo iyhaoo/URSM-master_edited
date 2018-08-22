@@ -1,3 +1,10 @@
+#!/bin/bash
+#PBS -N scUnif
+#PBS -l nodes=cu12
+#PBS -M 904469382@qq.com
+#PBS -l walltime=7200:00:00
+
+
 
 data_dir=/home/yuanhao/single_cell/impute_criteria/simulated_data
 output_dir=/home/yuanhao/single_cell/impute_criteria/outputs/scUnif
