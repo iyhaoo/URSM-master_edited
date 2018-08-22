@@ -1,0 +1,69 @@
+################################################################################
+Gibbs-EM for 3 cell types.
+Date and time: 2017-04-09 23:33:46.777633
+Algorithm arguments:
+	--gibbs_sample_number: 20
+	--EM_maxiter: 10
+	--initial_tau_mean_var: None
+	--single_cell_type_file: demo/demo_data/demo_single_cell_types.csv
+	--EM_convergence_tol: 1e-06
+	--initial_A_file: None
+	--initial_alpha_file: None
+	--initial_kappa_mean_var: None
+	--bulk_expr_file: demo/demo_data/demo_bulk_rnaseq_counts.csv
+	--iMarkers_file: None
+	--mininimal_A: 1e-06
+	--single_cell_expr_file: demo/demo_data/demo_single_cell_rnaseq_counts.csv
+	--verbose_level: 1
+	--est_alpha: True
+	--output_directory: demo/demo_out
+	--number_of_cell_types: 3
+	--gibbs_thinning: 1
+	--logging_file: demo/demo_out/demo_logging.log
+	--burn_in_length: 10
+	--output_prefix: gemout_
+	--bk_mean_approx: True
+	--Mstep_maxiter: 500
+	--Mstep_convergence_tol: 1e-06
+################################################################################
+Loading data ...
+50 bulk samples on 100 genes are loaded.
+50 single cells on 100 genes are loaded.
+
+Gibbs-EM started ...
+1-th EM iteration started...
+	E-step finished: elbo=-12495.132032
+	M-step finished: elbo=-12375.674075
+2-th EM iteration started...
+	E-step finished: elbo=-12313.511023
+	M-step finished: elbo=-12312.000984
+3-th EM iteration started...
+	E-step finished: elbo=-12284.674412
+	M-step finished: elbo=-12283.991955
+4-th EM iteration started...
+	E-step finished: elbo=-12270.712238
+	M-step finished: elbo=-12269.942081
+5-th EM iteration started...
+	E-step finished: elbo=-12266.264098
+	M-step finished: elbo=-12265.778670
+6-th EM iteration started...
+	E-step finished: elbo=-12264.802725
+	M-step finished: elbo=-12264.333616
+7-th EM iteration started...
+	E-step finished: elbo=-12264.371225
+	M-step finished: elbo=-12264.022142
+8-th EM iteration started...
+	E-step finished: elbo=-12265.224660
+	M-step finished: elbo=-12264.906378
+9-th EM iteration started...
+	E-step finished: elbo=-12266.361012
+	M-step finished: elbo=-12266.082421
+10-th EM iteration started...
+	E-step finished: elbo=-12267.346120
+	M-step finished: elbo=-12267.132710
+Gibbs-EM finished in 24.59 seconds.
+
+Results are under directory demo/demo_out.
+Logging info is written to demo/demo_out/demo_logging.log.
+################################################################################
+
